@@ -1,14 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPOSITÓRIO</title>
+    <title>Formulario Kenzie</title>
 </head>
+
 <body>
-    <h1>
-        teste
-    </h1>
+    <section>
+        <h1>Formulário de cadastro</h1>
+        <form>
+            <section>
+                <label for="nome"> Nome
+                    <section>
+                        <input type="text" id="nome" required="true" placeholder="nome completo">
+                    </section>
+                </label>
+            </section>
+
+            <!--seção email-->
+            <section>
+                <label for="email"> Email
+                    <section>
+                        <input type="text" id="email" required="true" placeholder="digite seu email">
+                    </section>
+                  
+                </label>
+            </section>
+            
+            <!--descrição-->
+            <section>
+                <label for="descrição">Motivação
+                   <section>
+                    <textarea name="descrição" id="descrição" cols="60" placeholder="conte que te motivou" rows="10">
+                    </textarea>
+                   </section>
+                </label>
+            </section>
+            
+            <!-- seção modulo-->
+            <section>
+                <label for="modulo">Selecione o modulo que está
+                    <section>
+                    <select name="modulo" id="modulo" required="true">
+                        <option value="">Modulo</option>
+                        <option value="M-1">M-1</option>
+                        <option value="M-2">M-2</option>
+                        <option value="M-3">M-3</option>
+                        <option value="M-4">M-4</option>
+                        <option value="M-5">M-5</option>
+                        <option value="M-6">M-6</option>
+                    </select>
+                    </section>
+                </label>
+            </section>
+
+            <!--seção de senha-->
+            <section>
+                <label for="senha"> Cadastre uma senha com até 8 caractere
+                    <section>
+                    <input type="password" name="senha" required="true" id="senha" placeholder="senha" maxlength="8">
+                    </section>
+                </label>
+            </section>
+
+            <!--confirmação de senha-->
+            <section>
+                <label for="confirmação de senha"> Confirme sua senha
+                    <section>
+                    <input type="password" name="confirmação de senha" id="confirmação de senha" required="true" maxlength="8" placeholder="Confirme sua senha">
+                    </section>
+                </label>
+            </section>
+
+            <!-- campo de pergunta-->
+            <section>
+                <label for="novidades">Deseja receber novidades em seu email?</label>
+                <input type="radio" name="receber novidades" value="receber novidades" id="novidades">sim
+                <input type="radio" name="receber novidades" value="não receber novidades" id="novidades">não
+            </section>
+
+            <section>
+                <button type="submit">Enviar formulario</button>
+            </section>
+        </form>
+    </section>
+
 </body>
 </html>
